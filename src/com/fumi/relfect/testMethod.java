@@ -46,13 +46,11 @@ public class testMethod {
 		try {
 			obj = clazz.newInstance();
 		} catch (InstantiationException | IllegalAccessException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}  
 		try {
 			method2.invoke(obj, "changwen");
 		} catch (IllegalAccessException | IllegalArgumentException | InvocationTargetException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}  
 	}

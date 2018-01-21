@@ -29,6 +29,8 @@ public class testField {
 	    //4、若该字段是私有的，需要调用setAccessible(true)方法  
 	    Field field2 = clazz.getDeclaredField("age");  
 	    field2.setAccessible(true);  
+	    field2.set(person, 121);
+	    System.out.println(person.getAge());
 	    System.out.println("获取指定私有字段名=: " + field2.getName());  	
 	}
 }

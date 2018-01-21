@@ -19,7 +19,6 @@ public class testConstructor {
 	    Constructor<Person> constructor = clazz.getConstructor(String.class, int.class);  
 	    System.out.println("指定的-->" + constructor);
 	 
-	    
 	    //2.调用构造器的newInstance()方法创建对象  
 	    Object obj= constructor.newInstance("changwen", 11);  
 	    System.out.println(obj.toString());
