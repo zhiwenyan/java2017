@@ -58,7 +58,7 @@ public class TestStream2 {
 	public void test3() {
 		List<Integer> list = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 		Integer integer = list.stream().reduce(0, (x, y) -> x + y);
-		System.out.println(integer);
+		System.out.println("integer="+integer);
 		System.out.println("---------------------");
 
 		Optional<Double> op = emps.stream().map(Employee::getSalary).reduce(Double::sum);
@@ -76,7 +76,7 @@ public class TestStream2 {
 
 	@Test
 	public void test5() {
-		// 平均值
+		// 平均值2
 		Double avg = emps.stream()
 				.collect(Collectors.averagingDouble(Employee::getSalary));
 		System.err.println("avg=" + avg);

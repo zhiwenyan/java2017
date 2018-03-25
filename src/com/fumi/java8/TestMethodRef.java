@@ -49,6 +49,7 @@ public class TestMethodRef {
 		comparator.compare(1, 2);
 		Comparator<Integer> comparator2=Integer::compare;
 		
+		
 	}
 	//类：：实例方法名
 	public void test4() {
